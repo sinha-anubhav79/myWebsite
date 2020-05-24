@@ -15,7 +15,8 @@ body{
 }
 
 #logo{
-	float: right;
+	float: left;
+	padding-left: 150px;
 }
 
 #mainHeader img{
@@ -53,7 +54,7 @@ body{
 
 #navbar a{
 	color: white;
-	font-size: 18px;
+	font-size: 20px;
 	text-decoration: none;
 }
 
@@ -63,6 +64,10 @@ body{
 
 .button{
 	padding: 20px;
+}
+
+.button:hover{
+	background-color: white;
 }
 
 #showcase{
@@ -76,4 +81,41 @@ body{
 	color: white;
 	font-size: 40px;
 	padding-top: 60px;
+}
+
+.SecHead{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 50px;
+	text-align: center;
+	color: #555;
+}
+
+.SecBody{
+	float: left;
+	width: 70%;
+	box-sizing: border-box;
+	padding: 30px;
+	font-size: 30px;
+}
+
+#bio{
+	color: white;
+	background-color: #333;
+	float: right;
+	box-sizing: border-box;
+	margin-top: 20px;
+	margin-right: 50px;
+	padding: 20px;
+	padding-top: 10px;
+	padding-right: 50px;
+	font-size: 25px;
+}
+
+.jt{
+	color: #ff3;
+}
+
+#bio ul{
+	padding: 0;
+	list-style: none;
 }
