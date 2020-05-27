@@ -79,7 +79,7 @@ body{
 }
 
 #showcase{
-	background-image: url("showcase.jpg");
+	background-image: url("../images/showcase.jpg");
 	line-height: 2em;
 	text-align: center;
 	height: 200px;
@@ -134,7 +134,7 @@ body{
 	list-style: none;
 }
 
-#con2{
+#Education{
 	display: block;
 }
 
@@ -180,4 +180,35 @@ body{
 	box-sizing: border-box;
 	padding: 30px;
 	font-size: 30px;
+	text-align: center;	
+}
+
+#Work{
+	display: block;
+}
+
+.vid{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.workVid{
+	width: 200px;
+	text-decoration: none;
+	color: black;
+}
+
+.workVid img{
+	border-color: black;
+	width: 200px;
+}
+
+#Contact{
+	display: block;
+}
+
+.socmed{
+	text-decoration: none;
+	color: rgb(40, 40, 190);
 }
