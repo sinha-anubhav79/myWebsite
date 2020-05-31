@@ -46,6 +46,7 @@ body{
   	top: 0px;
 	background-color: #333;
 	color: #fff;
+	z-index: 100;
 }
 
 #navi{
@@ -58,6 +59,8 @@ body{
 
 #navbar ul{
 	padding: 0;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 #navbar a{
@@ -113,6 +116,9 @@ body{
 	box-sizing: border-box;
 	padding: 30px;
 	font-size: 30px;
+	position: relative;
+	animation-name: intro;
+	animation-duration: 2s;
 }
 
 #bio{
@@ -122,6 +128,9 @@ body{
 	width: 30%;
 	padding: 20px;
 	font-size: 25px;
+	position: relative;
+	animation-name: bio;
+	animation-duration: 1s;
 }
 
 .jt{
@@ -144,15 +153,37 @@ body{
 	align-items: center;
 }
 
-.ed{
+.ed, .ed1{
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
+	position: relative;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
+.ed{
+	left: -110%;
+	animation-name: Edim;
+	animation-duration: 3s;
+}
+
+.ed1{
+	right: -110%;
+	animation-name: Edim1;
+	animation-duration: 3s;
 }
 
 .ed img{
-	border-radius: 200px;
-	padding: 20px 20px;
+	border: 5px solid black;
+	width: 200px;
+	border-radius: 50%;
+}
+
+.ed1 img{
+	border: 5px solid black;
+	width: 200px;
+	border-radius: 50%;
 }
 
 .SecHead2{
@@ -194,6 +225,7 @@ body{
 }
 
 .workVid{
+	border: 5px solid black;
 	width: 200px;
 	text-decoration: none;
 	color: black;
@@ -211,4 +243,24 @@ body{
 .socmed{
 	text-decoration: none;
 	color: rgb(40, 40, 190);
+}
+
+@keyframes Edim{
+	0% {left: -100%;}
+	100% {left: 0px;}
+}
+
+@keyframes Edim1{
+	0% {right: -100%;}
+	100% {right: 0px;}
+}
+
+@keyframes intro{
+	0% {left: -100%;}
+	100% {left: 0px;}
+}
+
+@keyframes bio{
+	0% {right: -100%;}
+	100% {right: 0px;}
 }
